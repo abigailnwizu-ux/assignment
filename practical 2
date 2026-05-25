@@ -1,0 +1,10 @@
+import pandas as pd
+
+# Create the CSV file first
+csv_content = "Name,Score,Department\nJohn,78,Cybersecurity\nMary,85,Computer Science"
+with open("students.csv", "w") as f:
+    f.write(csv_content)
+
+data = pd.read_csv("students.csv")
+print(data.head())
+print(data.info())

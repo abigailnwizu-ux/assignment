@@ -1,0 +1,6 @@
+import json
+
+# Using the correct data from the JSON shown above
+data = '{"name": "Ayo", "course": "Cybersecurity", "level": 300}'
+parsed = json.loads(data)
+print(parsed["name"])  # Output: Ayo
